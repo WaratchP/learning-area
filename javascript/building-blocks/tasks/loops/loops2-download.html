@@ -41,7 +41,9 @@
     ]
 
     // Add your code here
-
+    const searchAddress = phonebook.filter(address => address.name == name);
+    para.textContent = `${searchAddress[0].name}: ${searchAddress[0].number}`
+    console.table(searchAddress);
     // Don't edit the code below here!
     const section = document.querySelector('section');
     section.appendChild(para);

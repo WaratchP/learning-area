@@ -30,7 +30,11 @@
     const list = document.createElement('ul');
 
     // Add your code here
-
+    myArray.map(food => {
+      const li = document.createElement('li');
+      li.textContent = food;
+      list.appendChild(li);
+    })
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
